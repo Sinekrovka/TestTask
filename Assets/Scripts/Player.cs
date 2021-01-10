@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D bal;
     public PlanetSettings gravitySetting;
-    
+    public float jump;
+    public Camera cam;
+
+    private Rigidbody2D bal;
+
     void Start()
     {
         bal = GetComponent<Rigidbody2D>();
         bal.gravityScale = gravitySetting.Gravity;
-        
-        Debug.Log(bal.gravityScale);
         
     }
 
@@ -20,5 +21,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+    }
+    
+    void FixedUpdate()
+    {
+       // bal.AddForce(mousePositionOnScreen * jump);
+       //bal.AddRelativeForce(mousePositionOnScreen);
     }
 }
