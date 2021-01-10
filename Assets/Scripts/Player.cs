@@ -25,6 +25,21 @@ public class Player : MonoBehaviour
     
     void FixedUpdate()
     {
+        /*if (Input.GetButton("Fire1") || Input.touchCount > 0)
+        {
+            Vector3 point = Input.mousePosition;
+            point.z = 0f;
+            point = cam.ScreenToWorldPoint(point);
+            bal.AddForce(point * jump);
+            
+        }*/
+        if (Input.GetButton("Fire1") || Input.touchCount > 0)
+        {
+            Vector3 point = Input.mousePosition;
+            point.z = 0f;
+            point = cam.ScreenToWorldPoint(point);
+            bal.AddForce(point * jump, ForceMode2D.Impulse);
+        }
        // bal.AddForce(mousePositionOnScreen * jump);
        //bal.AddRelativeForce(mousePositionOnScreen);
     }
