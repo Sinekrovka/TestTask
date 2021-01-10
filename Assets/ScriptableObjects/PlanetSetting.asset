@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1967ea2e5284b2b489809d5e0024c8ce, type: 3}
+  m_Name: PlanetSetting
+  m_EditorClassIdentifier: 
+  gravity: 9.8
+  skyColor: {r: 0.4268423, g: 0.7487338, b: 0.8301887, a: 0}
